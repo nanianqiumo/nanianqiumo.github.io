@@ -1,0 +1,73 @@
+{
+    "mode": "history",
+    "base": "/",
+    "routes": [
+        {
+            "path": "/appshell",
+            "name": "appshell",
+            "meta": {}
+        },
+        {
+            "path": "/detail/:id",
+            "name": "detailId",
+            "meta": {}
+        },
+        {
+            "path": "/",
+            "name": "index",
+            "meta": {}
+        },
+        {
+            "path": "/rank",
+            "name": "rank",
+            "meta": {},
+            "children": [
+                {
+                    "path": ":id",
+                    "name": "rankId",
+                    "meta": {}
+                }
+            ]
+        },
+        {
+            "path": "/recommend",
+            "name": "recommend",
+            "meta": {},
+            "children": [
+                {
+                    "path": ":id",
+                    "name": "recommendId",
+                    "meta": {}
+                }
+            ]
+        },
+        {
+            "path": "/search",
+            "name": "search",
+            "meta": {}
+        },
+        {
+            "path": "/singer",
+            "name": "singer",
+            "meta": {},
+            "children": [
+                {
+                    "path": ":id",
+                    "name": "singerId",
+                    "meta": {}
+                }
+            ]
+        },
+        {
+            "path": "/user",
+            "name": "user",
+            "meta": {}
+        },
+        {
+            "path": "/error",
+            "name": "error",
+            "meta": {},
+            "alias": "*"
+        }
+    ]
+}
